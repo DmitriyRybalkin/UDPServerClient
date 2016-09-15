@@ -300,7 +300,7 @@ int udp_server::get_or_create_client_id(udp::endpoint endpoint)
   } else {
     next_client_id = 0;
     
-    return 13;
+    return (MAX_CLIENT_LIST_SIZE + 1);
   }
 };
 
